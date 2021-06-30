@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+        <link rel="stylesheet" href="style.css">
+        <title>Form </title>
+    </head>
+    <body>
+        <form>
+            <div class="field-name">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Username" required>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="field-email innactive">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email" required>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            <div class="field-password innactive">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="Password"  id="psw" 
+                title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <i class="fas fa-arrow-down"></i>
+            </div>
+            
+            <div class="field-finish innactive">
+                <i class="fas fa-heart"></i>
+                <p>Thank You !</p>
+                <i class="fas fa-heart"></i>
+            </div>
+        </form>
+        <div id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+          </div>
+        <script src="app.js"></script>
+    </body>
+</html>

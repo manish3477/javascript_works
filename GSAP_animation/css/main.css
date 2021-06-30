@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+}
+
+.dark {
+  text-align: left;
+  background: #292828;
+  color: white;
+  position: relative;
+}
+
+img {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.content {
+  padding: 9em 5em;
+  z-index: 1;
+  position: relative;
+}
+
+.content h2 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+.content p {
+  font-size: 1.6em;
+}
+/*# sourceMappingURL=main.css.map */
